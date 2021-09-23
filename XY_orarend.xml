@@ -53,43 +53,43 @@
 	<ora id="08" tipus="Gyakorlat">
 		<targy>Webtechnológiák</targy>
 		<idopont nap="KEDD" tol="18:00" ig="20:00"></idopont>
-		<helyszin></helyszin>
-		<oktato></oktato>
+		<helyszin>Inf. 103</helyszin>
+		<oktato>Agárdi Anita</oktato>
 		<szak>Mérnökinformatikus</szak>
 	</ora>
 	<ora id="09" tipus="Előadás">
 		<targy>Szoftvertesztelés</targy>
 		<idopont nap="SZERDA" tol="8:00" ig="10:00"></idopont>
-		<helyszin></helyszin>
-		<oktato></oktato>
+		<helyszin>Inf. 103</helyszin>
+		<oktato>Kunné Tamás Judit</oktato>
 		<szak>Mérnökinformatikus</szak>
 	</ora>
 	<ora id="10" tipus="Gyakorlat">
 		<targy>Szoftvertesztelés</targy>
 		<idopont nap="SZERDA" tol="10:00" ig="12:00"></idopont>
-		<helyszin></helyszin>
-		<oktato></oktato>
+		<helyszin>Inf. 103</helyszin>
+		<oktato>Tompa Tamás</oktato>
 		<szak>Mérnökinformatikus</szak>
 	</ora>
 	<ora id="11" tipus="Gyakorlat">
 		<targy>Mesterséges Intelligenciák</targy>
 		<idopont nap="SZERDA" tol="13:00" ig="14:00"></idopont>
-		<helyszin></helyszin>
-		<oktato></oktato>
+		<helyszin>Inf. 15</helyszin>
+		<oktato>Dr. Dudás László</oktato>
 		<szak>Mérnökinformatikus</szak>
 	</ora>
 	<ora id="12" tipus="Előadás">
 		<targy>Integrált Vállalati Rendszerek</targy>
 		<idopont nap="SZERDA" tol="14:00" ig="16:00"></idopont>
-		<helyszin></helyszin>
-		<oktato></oktato>
+		<helyszin>15</helyszin>
+		<oktato>Dr. Dadvandipour Samad</oktato>
 		<szak>Mérnökinformatikus</szak>
 	</ora>
 	<ora id="13" tipus="Gyakorlat">
 		<targy>Integrált Vállalati Rendszerek</targy>
 		<idopont nap="SZERDA" tol="16:00" ig="18:00"></idopont>
-		<helyszin></helyszin>
-		<oktato></oktato>
+		<helyszin>Inf. 15</helyszin>
+		<oktato>Dr. Kulcsárné Dr. Forrai Mónika</oktato>
 		<szak>Mérnökinformatikus</szak>
 	</ora>
 </orarend>
