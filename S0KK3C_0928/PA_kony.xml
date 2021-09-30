@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE konyvek SYSTEM "SzM_konyv.dtd">
+
+<konyvek>
+
+	<konyv id="a">
+		<cim>Modern átverések</cim>
+        <kiadasi_eve>2002</kiadasi_eve>
+		<kiado>Libri</kiado>
+		<szerzo>Fekete Imre</szerzo>
+	</konyv>
+
+    <konyv id="b">
+		<cim>DarkNet</cim>
+        <kiadasi_eve>2017</kiadasi_eve>
+		<kiado>Mozaik</kiado>
+		<szerzo>Nagy Róbert</szerzo>
+	</konyv>
+
+    <konyv id="c">
+		<cim>Windows 10 mindenkinek</cim>
+        <kiadasi_eve>2014</kiadasi_eve>
+		<kiado>Álomgyár</kiado>
+		<szerzo>Bártfai Barnabás</szerzo>
+	</konyv>
+
+</konyvek>

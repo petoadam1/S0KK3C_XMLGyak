@@ -1,0 +1,13 @@
+<adatbazis>
+    <dolgozo id="d01">
+        <kod id="k001"></kod>
+        <nev id="n01" elnevezes="Pető Ádám"></nev>
+        <fizetes id="f01" ertek="250000"></fizetes>
+    </dolgozo>
+    
+    <dolgozo id="d02">
+        <kod id="k002"></kod>
+        <nev id="n02" elnevezes="Szalai Márton"></nev>
+        <fizetes id="f02" ertek="100000"></fizetes>
+    </dolgozo>
+</adatbazis>

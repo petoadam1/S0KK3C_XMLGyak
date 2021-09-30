@@ -1,0 +1,27 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT adatbazis (dolgozo)+>
+<!ATTLIST adatbazis
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT dolgozo (kod,nev,fizetes)>
+<!ATTLIST dolgozo
+  xmlns CDATA #FIXED ''
+  id NMTOKEN #REQUIRED>
+
+<!ELEMENT kod (#PCDATA)>
+<!ATTLIST kod
+  xmlns CDATA #FIXED ''
+  id NMTOKEN #REQUIRED>
+
+<!ELEMENT nev (#PCDATA)>
+<!ATTLIST nev
+  xmlns CDATA #FIXED ''
+  elnevezes CDATA #REQUIRED
+  id NMTOKEN #REQUIRED>
+
+<!ELEMENT fizetes (#PCDATA)>
+<!ATTLIST fizetes
+  xmlns CDATA #FIXED ''
+  ertek CDATA #REQUIRED
+  id NMTOKEN #REQUIRED>
