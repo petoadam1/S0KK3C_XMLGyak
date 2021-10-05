@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <!DOCTYPE books SYSTEM "books.dtd">-->
+
+<books xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="book.xsd">
+
+	<book id="a">
+		<title>Modern átverések</title>
+        <published>2002</published>
+		<publisher>Libri</publisher>
+		<author>Fekete Imre</author>
+		<abstract></abstract>
+	</book>
+
+    <book id="b">
+		<title>DarkNet</title>
+        <published>2017</published>
+		<publisher>Mozaik</publisher>
+		<author>Nagy Róbert</author>
+		<abstract></abstract>
+	</book>
+
+    <book id="c">
+		<title>Windows 10 mindenkinek</title>
+        <published>2014</published>
+		<publisher>Álomgyár</publisher>
+		<author>Bártfai Barnabás</author>
+		
+	</book>
+
+</books>
