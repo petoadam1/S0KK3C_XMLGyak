@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<nevjegykartyak>
+	<nevjegykartya>
+		<nev>Pető Ádám</nev>
+		<ceg>
+			<nev>EcoBuild</nev>
+			<cim>
+				<iranyitoszam>3530</iranyitoszam>
+				<varos>Miskolc</varos>
+				<utca>Pető Ádám</utca>
+				<hazszam>4</hazszam>
+			</cim>
+			<telefonszam>06301234567</telefonszam>
+			<weblap>www.ecobuild.hu</weblap>
+		</ceg>
+	</nevjegykartya>
+	<nevjegykartya>
+		<nev>Szabó Dániel</nev>
+		<ceg>
+			<nev>Joyson</nev>
+			<cim>
+				<iranyitoszam>3535</iranyitoszam>
+				<varos>Miskolc</varos>
+				<utca>Kósa Lajos</utca>
+				<hazszam>1</hazszam>
+			</cim>
+			<telefonszam>06709876543</telefonszam>
+			<weblap>www.joyson.com</weblap>
+		</ceg>
+	</nevjegykartya>
+</nevjegykartyak>
