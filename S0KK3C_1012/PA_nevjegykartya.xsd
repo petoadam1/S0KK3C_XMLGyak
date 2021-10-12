@@ -25,6 +25,9 @@
 							</sequence>
 						</complexType>
 					</element>
+					<element name="beosztas"/>
+					<element name="telefonszam"/>
+					<element name="email"/>
 				</sequence>
 			</complexType>
 			</element>
