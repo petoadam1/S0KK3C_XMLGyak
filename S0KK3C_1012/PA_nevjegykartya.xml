@@ -14,6 +14,9 @@
 			<telefonszam>06301234567</telefonszam>
 			<weblap>www.ecobuild.hu</weblap>
 		</ceg>
+		<beosztas>Mérnök</beosztas>
+		<telefonszam>06301245789</telefonszam>
+		<email>petoadam@gmail.com</email>
 	</nevjegykartya>
 	<nevjegykartya>
 		<nev>Szabó Dániel</nev>
@@ -28,5 +31,8 @@
 			<telefonszam>06709876543</telefonszam>
 			<weblap>www.joyson.com</weblap>
 		</ceg>
+		<beosztas>Mérnök</beosztas>
+		<telefonszam>06509638527</telefonszam>
+		<email>szabodaniel@gmail.com</email>
 	</nevjegykartya>
 </nevjegykartyak>
