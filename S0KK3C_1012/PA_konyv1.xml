@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<konyvek xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PA_konyv1.xsd">
+    <konyv isbn="9631518116">
+        <cim>A kőszívű ember fiai</cim>
+        <szerzo>Jókai Mór</szerzo>
+        <szereplo>
+            <nev>Bitskey Tibor</nev>
+            <baratja>Mécs Károly</baratja>
+            <szuletett>1929</szuletett>
+            <jellemzes>Tábornokhoz illő</jellemzes>
+        </szereplo>
+        <szereplo>
+            <nev>Mécs Károly</nev>
+            <szuletett>1936</szuletett>
+            <jellemzes>Magabiztos, határozott jellem</jellemzes>
+        </szereplo>
+    </konyv>
+</konyvek>
