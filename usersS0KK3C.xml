@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+<users>
+	<user id="1">
+		<firstName>Adam</firstName>
+		<lastName>Peto</lastName>
+		<profession>Mernokinformatikus</profession>
+	</user>
+	<user id="2">
+		<firstName>Balazs</firstName>
+		<lastName>Leho</lastName>
+		<profession>Sportolo</profession>
+	</user>
+	
+	<user id="3">
+		<firstName>Adam</firstName>
+		<lastName>Szendy</lastName>
+		<profession>Gazdasz</profession>
+	</user>
+</users>
+-->
+<users>
+	<user>
+		<firstName></firstName>
+		<lastName></lastName>
+		<profession></profession>
+	</user>
+	<user>
+		<firstName></firstName>
+		<lastName></lastName>
+		<profession></profession>
+	</user>
+	
+	<user>
+		<firstName></firstName>
+		<lastName></lastName>
+		<profession></profession>
+	</user>
+</users>
