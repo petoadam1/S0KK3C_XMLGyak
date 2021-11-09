@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class>
+   <student id = "001">
+      <firstname>Adam</firstname>
+      <lastname>Peto</lastname>
+      <nickname>adamasd</nickname>
+      <age>25</age>
+   </student>
+   
+   <student id = "002">
+      <firstname>Reka</firstname>
+      <lastname>Nagy</lastname>
+      <nickname>rekaasd</nickname>
+      <age>30</age>
+   </student>
+   
+   <student id = "003">
+      <firstname>Janos</firstname>
+      <lastname>Kiss</lastname>
+      <nickname>janosasd</nickname>
+      <age>27</age>
+   </student>
+</class>
