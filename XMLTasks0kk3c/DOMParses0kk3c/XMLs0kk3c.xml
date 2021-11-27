@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><etterem_service xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemas0kk3c.xsd">
+
+	<etterem adoszam="00001" etelId="101" nyersanyagId="001">
+		<nev>Csülök Bisztró</nev>
+		<elerhetoseg>
+			<telefonszam>+30-123-4567</telefonszam>
+			<email>csulokbusz@gmail.com</email>
+		</elerhetoseg>
+		<cim>
+			<iranyitoszam>3000</iranyitoszam>
+			<varos>Miskolc</varos>
+			<utca>Futó utca</utca>
+			<hazszam>25</hazszam>
+		</cim>
+	</etterem>
+	<etterem adoszam="00002" etelId="102" nyersanyagId="002">
+		<nev>Végállomás Bisztró</nev>
+		<elerhetoseg>
+			<telefonszam>+30-987-6543</telefonszam>
+			<email>vegallomas@gmail.com</email>
+		</elerhetoseg>
+		<cim>
+			<iranyitoszam>3501</iranyitoszam>
+			<varos>Miskolc</varos>
+			<utca>Széchenyi István utca</utca>
+			<hazszam>107</hazszam>
+		</cim>
+	</etterem>
+	<etterem adoszam="00003" etelId="103" nyersanyagId="003">
+		<nev>Pető Hambizó</nev>
+		<elerhetoseg>
+			<telefonszam>30-456-7981</telefonszam>
+			<email>petohambi@gmail.com</email>
+		</elerhetoseg>
+		<cim>
+			<iranyitoszam>3525</iranyitoszam>
+			<varos>Budapest</varos>
+			<utca>Zsedényi József utca</utca>
+			<hazszam>1</hazszam>
+		</cim>
+	</etterem>
+	<nyersanyag azonosito="001" termeloId="0001">
+		<tipus>kacsahús</tipus>
+	</nyersanyag>
+	<nyersanyag azonosito="002" termeloId="0002">
+		<tipus>borjúhús</tipus>
+	</nyersanyag>
+	<nyersanyag azonosito="003" termeloId="0001">
+		<tipus>Krumpli</tipus>
+	</nyersanyag>
+	<nyersanyag azonosito="004" termeloId="0002">
+		<tipus>Répa</tipus>
+	</nyersanyag>
+	<nyersanyag azonosito="005" termeloId="0001">
+		<tipus>Liszt</tipus>
+	</nyersanyag>
+	<termelo tid="0001">
+		<nev>Hús Nagyker</nev>
+		<telephely>
+			<iranyitoszam>3525</iranyitoszam>
+			<varos>Budapest</varos>
+			<utca>Zsedényi József utca</utca>
+			<hazszam>95</hazszam>
+		</telephely>
+	</termelo>
+	<termelo tid="0002">
+		<nev>Zöldség, Gyümölcs Nagyker</nev>
+		<telephely>
+			<iranyitoszam>3520</iranyitoszam>
+			<varos>Győr</varos>
+			<utca>Berzsenyi Dániel utca</utca>
+			<hazszam>8</hazszam>
+		</telephely>
+	</termelo>
+	<etel etelkod="101" rendelesId="000000001" vendegId="01">
+		<nev>Sushi</nev>
+	</etel>
+	<etel etelkod="102" rendelesId="000000002" vendegId="02">
+		<nev>Csokis palacsinta</nev>
+	</etel>
+	<etel etelkod="103" rendelesId="000000001" vendegId="03">
+		<nev>Cigány pecsenye</nev>
+	</etel>
+	<etel etelkod="104" rendelesId="000000003" vendegId="02">
+		<nev>Paprikás krumpli</nev>
+	</etel>
+	<etel etelkod="105" rendelesId="000000002" vendegId="01">
+		<nev>Pho leves</nev>
+	</etel>
+	<vendeg vendegkod="01">
+		<nev>Pető Ádám</nev>
+		<eletkor>20</eletkor>
+		<nem>Férfi</nem>
+	</vendeg>
+	<vendeg vendegkod="02">
+		<nev>Iványi Fruzsina</nev>
+		<eletkor>21</eletkor>
+		<nem>Nő</nem>
+	</vendeg>
+	<vendeg vendegkod="03">
+		<nev>Szalai Márton</nev>
+		<eletkor>21</eletkor>
+		<nem>Férfi</nem>
+	</vendeg>
+	<rendeles rendeloId="001" rszam="000000001">
+		<datum>2021.11.15</datum>
+	</rendeles>
+	<rendeles rendeloId="002" rszam="000000002">
+		<datum>2021.11.16</datum>
+	</rendeles>
+	<rendeles rendeloId="002" rszam="000000003">
+		<datum>2021.11.17</datum>
+	</rendeles>
+	<rendelo vevokod="001">
+		<nev>Pető Ádám</nev>
+		<lakcim>
+			<iranyitoszam>3525</iranyitoszam>
+			<varos>Szeged</varos>
+			<utca>Berzsenyi Dániel utca</utca>
+			<hazszam>9</hazszam>
+		</lakcim>
+	</rendelo>
+	<rendelo vevokod="002">
+		<nev>Sebák Petra</nev>
+		<lakcim>
+			<iranyitoszam>3522</iranyitoszam>
+			<varos>Gesztely</varos>
+			<utca>Aba utca</utca>
+			<hazszam>15</hazszam>
+		</lakcim>
+	</rendelo>
+</etterem_service>

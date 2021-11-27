@@ -1,0 +1,153 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <xs:element name="etterem_service">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice maxOccurs="unbounded">
+                    <xs:element name="etterem" type="etterem_type"/>
+                    <xs:element name="nyersanyag" type="nyersanyag_type"/>
+                    <xs:element name="termelo" type="termelo_type"/>
+                    <xs:element name="etel" type="etel_type"/>
+                    <xs:element name="vendeg" type="vendeg_type"/>
+                    <xs:element name="rendeles" type="rendeles_type"/>
+                    <xs:element name="rendelo" type="rendelo_type"/>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+        
+        <xs:key name="etteremid_PK">
+            <xs:selector xpath="etterem"/>
+            <xs:field xpath="@adoszam"/>
+        </xs:key>
+        <xs:key name="nyeranyagId_PK">
+            <xs:selector xpath="nyersanyag"/>
+            <xs:field xpath="@azonosito"/>
+        </xs:key>
+        <xs:key name="termeloId_PK">
+            <xs:selector xpath="termelo"/>
+            <xs:field xpath="@tid"/>
+        </xs:key>
+        <xs:key name="etelId_PK">
+            <xs:selector xpath="etel"/>
+            <xs:field xpath="@etelkod"/>
+        </xs:key>
+        <xs:key name="vendegId_PK">
+            <xs:selector xpath="vendeg"/>
+            <xs:field xpath="@vendegkod"/>
+        </xs:key>
+        <xs:key name="rendelesId_PK">
+            <xs:selector xpath="rendeles"/>
+            <xs:field xpath="@rszam"/>
+        </xs:key>
+        <xs:key name="rendeloId_PK">
+            <xs:selector xpath="rendelo"/>
+            <xs:field xpath="@vevokod"/>
+        </xs:key>
+        <xs:keyref name="etelId_FK" refer="etelId_PK">
+            <xs:selector xpath="etterem"/>
+            <xs:field xpath="@etelId"/>
+        </xs:keyref>
+        <xs:keyref name="nyeranyagId_FK" refer="nyeranyagId_PK">
+            <xs:selector xpath="etterem"/>
+            <xs:field xpath="@nyersanyagId"/>
+        </xs:keyref>
+        <xs:keyref name="termeloId_FK" refer="termeloId_PK">
+            <xs:selector xpath="nyersanyag"/>
+            <xs:field xpath="@termeloId"/>
+        </xs:keyref>
+        <xs:keyref name="vendegId_FK" refer="vendegId_PK">
+            <xs:selector xpath="etel"/>
+            <xs:field xpath="@vendegId"/>
+        </xs:keyref>
+        <xs:keyref name="rendelesId_FK" refer="rendelesId_PK">
+            <xs:selector xpath="etel"/>
+            <xs:field xpath="@rendelesId"/>
+        </xs:keyref>
+        <xs:keyref name="rendeloId_FK" refer="rendeloId_PK">
+            <xs:selector xpath="rendeles"/>
+            <xs:field xpath="@rendeloId"/>
+        </xs:keyref>
+    </xs:element>
+    
+     <xs:complexType name="etterem_type">
+        <xs:sequence>
+            <xs:element name="nev" type="xs:string"/>
+            <xs:element name="elerhetoseg" type="elerhetoseg_type"/>
+            <xs:element name="cim" type="cim_type"/>
+        </xs:sequence>
+        <xs:attribute name="adoszam" type="xs:unsignedByte" use="required"/>
+        <xs:attribute name="etelId" type="xs:unsignedByte" use="required"/>
+        <xs:attribute name="nyersanyagId" type="xs:unsignedByte" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="nyersanyag_type">
+        <xs:sequence>
+            <xs:element name="tipus" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="azonosito" type="xs:unsignedByte" use="required"/>
+        <xs:attribute name="termeloId" type="xs:unsignedByte" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="termelo_type">
+        <xs:sequence>
+            <xs:element name="nev" type="xs:string"/>
+            <xs:element name="telephely" type="cim_type"/>
+        </xs:sequence>
+        <xs:attribute name="tid" type="xs:unsignedByte" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="etel_type">
+        <xs:sequence>
+            <xs:element name="nev" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="etelkod" type="xs:unsignedByte" use="required"/>
+        <xs:attribute name="vendegId" type="xs:unsignedByte" use="required"/>
+        <xs:attribute name="rendelesId" type="xs:unsignedByte" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="vendeg_type">
+        <xs:sequence>
+            <xs:element name="nev" type="xs:string"/>
+            <xs:element name="eletkor" type="xs:integer"/>
+            <xs:element name="nem" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="vendegkod" type="xs:unsignedByte" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="rendeles_type">
+        <xs:sequence>
+            <xs:element name="datum" type="datum_type"/>
+        </xs:sequence>
+        <xs:attribute name="rszam" type="xs:unsignedByte" use="required"/>
+        <xs:attribute name="rendeloId" type="xs:unsignedByte" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="rendelo_type">
+        <xs:sequence>
+            <xs:element name="nev" type="xs:string"/>
+            <xs:element name="lakcim" type="cim_type"/>
+        </xs:sequence>
+        <xs:attribute name="vevokod" type="xs:unsignedByte" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="elerhetoseg_type">
+        <xs:sequence>
+            <xs:element name="telefonszam" type="xs:string"/>
+            <xs:element name="email" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="cim_type">
+        <xs:sequence>
+            <xs:element name="iranyitoszam" type="xs:string"/>
+            <xs:element name="varos" type="xs:string"/>
+            <xs:element name="utca" type="xs:string"/>
+            <xs:element name="hazszam" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+
+	<xs:simpleType name="datum_type">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{4}\.(0[1-9]|1[012])\.(0[1-9]|[12][0-9]|3[01])"/> <!-- YYYY.MM.DD -->
+        </xs:restriction>
+    </xs:simpleType>
+	<xs:simpleType name="telefonszam_type">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{2}-\d{3}-\d{4}"/>
+            <xs:pattern value="\d{2}-\d{3}-\d{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
