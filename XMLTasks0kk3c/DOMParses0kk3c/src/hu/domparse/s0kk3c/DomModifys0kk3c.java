@@ -23,9 +23,9 @@ public class DomModifys0kk3c {
 			throws ParserConfigurationException, IOException, SAXException, TransformerException {
 
 		File xmlFile = new File("XMLs0kk3c.xml"); // xml fájl bekérése
-		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance(); // olvasás lehetõvé tétele
-		DocumentBuilder dBuilder = factory.newDocumentBuilder();
-		Document doc = dBuilder.parse(xmlFile);
+		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance(); // olvasás lehetõvé tétele, // XML dokumentumból DOM objektum lehetővé tétele
+		DocumentBuilder dBuilder = factory.newDocumentBuilder(); // XML fájl, Document lekéréséhez
+		Document doc = dBuilder.parse(xmlFile); // dokument lekérése
 		doc.getDocumentElement().normalize();
 		System.out.println("XML Módosítása");
 		System.out.println("Adja meg mit szeretne módosítani: ");
@@ -90,43 +90,7 @@ public class DomModifys0kk3c {
 		}
 		ModifyXML(doc); // Létrehozzuk az XML-t
 	}
-	/*private static void ModifyCsoport(Document doc, int csoportszam) throws TransformerException {
-		System.out.println("Melyik csoportot kívánja módosítani?");
-		for (int i = 1; i < csoportszam + 1; i++) {
-			System.out.println(i + ". csoport");
-			DomReadFB8YPQ.ReadCsoportById(doc, String.valueOf(i));
-			System.out.println("-------------------------------------------");
-		}
-		String id = ReadId();
-		// Bekérjük az új adatokat
-		Scanner sc = new Scanner(System.in);
-		System.out.print("Korosztály: ");
-		String korosztaly = sc.nextLine();
-		System.out.print("Létszám: ");
-		String letszam = sc.nextLine();
-		System.out.print("Csoportnév: ");
-		String csoportnev = sc.nextLine();
-		sc.close();
-		// lekérdezzük az Elementeket, majd setTextContent-el módosítjuk.
-		NodeList nodeList = doc.getElementsByTagName("Csoport");
-		for (int i = 0; i < nodeList.getLength(); i++) {
-			Node nNode = nodeList.item(i);
-			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-				Element element = (Element) nNode;
-				String sid = element.getAttribute("id");
-				if (sid.equals(id)) {
-					Node node1 = element.getElementsByTagName("Korosztaly").item(0);
-					node1.setTextContent(korosztaly);
-					Node node2 = element.getElementsByTagName("Letszam").item(0);
-					node2.setTextContent(letszam);
-					Node node3 = element.getElementsByTagName("Csoportnev").item(0);
-					node3.setTextContent(csoportnev);
-					System.out.println("Sikeres módosítás");
-				}
-			}
-		}
-		ModifyXML(doc); // Létrehozzuk az XML-t
-	}*/
+	
 	private static void ModifyEtel(Document doc, int etelSzama) throws TransformerException {
 		// Kiiratjuk a jelenlegi eteleket, majd lekérdezzük melyiket kívánja módosítani
 		System.out.println("Melyik etel adatait szeretné módosítani?");
@@ -140,8 +104,6 @@ public class DomModifys0kk3c {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Nev: ");
 		String nev = sc.nextLine();
-		System.out.print("Tipus: ");
-		String tipus = sc.nextLine();
 		sc.close();
 		// lekérdezzük az Elementeket, majd setTextContent-el módosítjuk.
 		NodeList nodeList = doc.getElementsByTagName("etel");
@@ -149,12 +111,10 @@ public class DomModifys0kk3c {
 			Node nNode = nodeList.item(i);
 			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 				Element element = (Element) nNode;
-				String sid = element.getAttribute("id");
+				String sid = element.getAttribute("etelkod");
 				if (sid.equals(id)) {
 					Node node1 = element.getElementsByTagName("nev").item(0);
 					node1.setTextContent(nev);
-					Node node2 = element.getElementsByTagName("tipus").item(0);
-					node2.setTextContent(tipus);
 					System.out.println("Sikeres módosítás");
 				}
 			}
@@ -183,7 +143,7 @@ public class DomModifys0kk3c {
 			Node nNode = nodeList.item(i);
 			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 				Element element = (Element) nNode;
-				String sid = element.getAttribute("id");
+				String sid = element.getAttribute("tid");
 				if (sid.equals(id)) {
 					Node node1 = element.getElementsByTagName("nev").item(0);
 					node1.setTextContent(nev);
@@ -219,7 +179,7 @@ public class DomModifys0kk3c {
 			Node nNode = nodeList.item(i);
 			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 				Element element = (Element) nNode;
-				String sid = element.getAttribute("id");
+				String sid = element.getAttribute("vendegkod");
 				if (sid.equals(id)) {
 					Node node1 = element.getElementsByTagName("nev").item(0);
 					node1.setTextContent(nev);

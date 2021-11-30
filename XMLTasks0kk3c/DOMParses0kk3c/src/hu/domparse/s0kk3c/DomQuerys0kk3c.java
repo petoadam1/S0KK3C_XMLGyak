@@ -20,10 +20,10 @@ public class DomQuerys0kk3c {
 	public static void main(String[] args)
 			throws ParserConfigurationException, IOException, SAXException, TransformerException {
 
-		File xmlFile = new File("XMLs0kk3c.xml"); // xml f·jl bekÈrÈse
-		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance(); // olvas·s lehetıvÈ tÈtele
-		DocumentBuilder dBuilder = factory.newDocumentBuilder();
-		Document doc = dBuilder.parse(xmlFile);
+		File xmlFile = new File("XMLs0kk3c.xml"); // xml f√°jl bek√©r√©se
+		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance(); // olvas√°s lehet≈ëv√© t√©tele, // XML dokumentumb√≥l DOM objektum lehet≈ëv√© t√©tele
+		DocumentBuilder dBuilder = factory.newDocumentBuilder(); // XML f√°jl, Document lek√©r√©s√©hez
+		Document doc = dBuilder.parse(xmlFile); // dokument lek√©r√©se
 		doc.getDocumentElement().normalize();
 
 		System.out.println("Root element: " + doc.getDocumentElement().getNodeName());
@@ -33,7 +33,7 @@ public class DomQuerys0kk3c {
 	}
 
 	public static void LoadVendegQuery(Document doc) throws TransformerException {
-		NodeList nodeList = doc.getElementsByTagName("vendeg"); // vendeg elemek list·z·sa
+		NodeList nodeList = doc.getElementsByTagName("vendeg"); // vendeg elemek list√°z√°sa
 		String vendeg;
 		Element element = null;
 		Node nNode = null;
@@ -44,8 +44,8 @@ public class DomQuerys0kk3c {
 			System.out.println((i + 1) + ") " + nev);
 
 		}
-		// T·nciskola v·laszt·sa
-		System.out.println("Õrja be annak a vendÈg nevÈt, amelyiknek az Èteleit szeretnÈ l·tni: ");
+		// T√°nciskola v√°laszt√°sa
+		System.out.println("√çrja be annak a vend√©g nev√©t, amelyiknek az √©teleit szeretn√© l√°tni: ");
 		Scanner sc = new Scanner(System.in);
 		vendeg = sc.nextLine();
 		for (int i = 0; i < nodeList.getLength(); i++) {
@@ -53,11 +53,11 @@ public class DomQuerys0kk3c {
 			element = (Element) nNode;
 			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 
-				if (vendeg.equals("Petı ¡d·m")) {
+				if (vendeg.equals("Pet≈ë √Åd√°m")) {
 					LoadEtelQuery(doc, "01");
 					break;
 				}
-				if (vendeg.equals("Ivanyi Fruzsina")) {
+				if (vendeg.equals("Iv√°nyi Fruzsina")) {
 					LoadEtelQuery(doc, "02");
 					break;
 				}

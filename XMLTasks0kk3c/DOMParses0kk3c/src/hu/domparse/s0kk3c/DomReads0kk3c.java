@@ -18,7 +18,7 @@ public class DomReads0kk3c {
 	public static void main(String[] args) {
 		try {
 			File xmlFile = new File("XMLs0kk3c.xml"); // xml fájl, amelyből olvasunk
-			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance(); // XML dokumentumból DOM objektum lehetõvé tétele
+			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance(); // XML dokumentumból DOM objektum lehetővé tétele
 			DocumentBuilder dBuilder = factory.newDocumentBuilder(); // XML fájl, Document lekéréséhez
 			Document doc = dBuilder.parse(xmlFile); // dokument lekérése
 			System.out.println(doc);
@@ -37,7 +37,7 @@ public class DomReads0kk3c {
 	}
 
 	public static void Read(Document doc) {
-		NodeList nList = doc.getElementsByTagName("etterem"); // Fellepes taggal rendelkezõ elemek lekérése
+		NodeList nList = doc.getElementsByTagName("etterem"); // Etterem taggal rendelkezõ elemek lekérése
 																// listába
 		for (int i = 0; i < nList.getLength(); i++) { // listán végigmegyünk
 			Node nNode = nList.item(i); // lekérjük a lista aktuális elemét, majd elementé konvertáljuk
@@ -50,7 +50,7 @@ public class DomReads0kk3c {
 				String etelId = element.getAttribute("etelId");
 				String nyersanyagId = element.getAttribute("nyersanyagId");
 				System.out.println("\n-----------------------------------" + (i + 1) + ". Étterem-----------------------------------");
-				System.out.println("\n\tAdószám:\t" + nev);
+				System.out.println("\n\tNév:\t" + nev);
 				System.out.println("\n\tElérhetőség:\t" + elerhetoseg);
 				System.out.println("\n\tCím:\t" + cim);
 				ReadEtelById(doc, etelId);
